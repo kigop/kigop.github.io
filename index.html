@@ -2,22 +2,56 @@
 layout: default
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-md-12 section">
+    <h1>We help you deliver unique<br />experiences to your audence</h1>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="row">
+  <div class="col-md-12 section">
+    video
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="row">
+  <div class="col-md-12 section"  id="clients">
+    <h1>We've done work for</h1>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    {% include client-logo.html clientname="northside.png" %}
+    {% include client-logo.html clientname="tinderbox.png" %}
+    {% include client-logo.html clientname="madmarked.jpeg" %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-md-12 section" id="contact">
+    <div class="container">
+      <h1>get in touch<br />and give your audience a<br />unique experience</h1>
+      <span>Tel: +45 28 93 69 02</span><br />
+      <figure class="tint">
+        <img src="assets/images/ashi.jpg" />
+        <img src="assets/images/ashi.jpg" />
+        <img src="assets/images/ashi.jpg" />
+      </figure>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 section" id="visit">
+    <h1>visit our studio</h1>
+    <span>
+      Studsgade 40 st. tv.<br />
+      8000 Aarhus C.
+    </span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 section">
+    {% include map.html %}
+  </div>
 </div>
