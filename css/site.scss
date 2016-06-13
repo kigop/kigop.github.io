@@ -8,19 +8,102 @@ $white: #f7f7f7;
 $darkgrey: #606666;
 $lightgrey: #f3f3f3;
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Black.otf');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// ROBOTO
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body  {
   text-align: center;
   text-transform: uppercase;
   background-color: $white;
   color: $black;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+h1 {
+  // margin-top: 10vh;
 }
 
 #header {
-  background-color: red;
+  // display: table;
+
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  min-height: 75vh;
+  background-color: none !important;
+
+  iframe {
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    width:100%;
+    height:75vh;
+    border:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position:fixed;
+  }
+
+  #logo {
+    z-index: 999;
+    pointer-events: none;
+    width: 50%;
+    height: auto;
+
+  }
+
 }
 
 .section {
+  display: table;
   min-height: 75vh;
+  background-color: $white;
+}
+
+.center-align {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #social {
@@ -28,29 +111,71 @@ body  {
 }
 
 #visit {
-  padding-top: 20vh;
+  // padding-top: 20vh;
 }
 
 #contact {
   background-color: $darkgrey;
   color: $white;
+  min-height: 50vh;
+
+  span {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-top: 2vh;
+  }
 }
 
-.tint {
-  background: rgba($darkgrey, 0.5);
+#members {
+  background-color: $darkgrey;
+  min-height: 25vh;
+}
+
+#names {
+
+  background-color: $white;
+
+  p {
+
+    span {
+      font-size: 14pt;
+      font-weight: bold;
+    }
+  }
 }
 
 #clients {
 
+  background-color: white;
+  padding-bottom: 5vh;
+
   .client {
-    float: left;
-    width: 300px;
+    // float: left;
+    // width: 33%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
     height: 300px;
     background-color: $lightgrey;
 
     img {
-      width: 200px;
+      width: 70%;
     }
+
+    .client-img {
+      background-size: contain;
+      // position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 70%;
+      width: 70%;
+}
+  }
+
+  h1 {
+    padding-top: 10vh;
+    padding-bottom: 5vh;
   }
 
 }
@@ -58,4 +183,35 @@ body  {
 #map {
     width: 100%;
     height: 75vh;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.videoWrapper {
+	position: relative;
+	// padding-bottom: 56.25%; /* 16:9 */
+	// padding-top: 25px;
+  padding: 0;
+	height: 75vh;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tint {
+  // background-image: url(../assets/images/ashi.jpg);
+  background-color: $darkgrey;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 280px;
 }

@@ -16,6 +16,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  kigop
+facebook_username: kigopvr
+instagram_username: kigopvr
+linkedin_username: kigop
+youtube_username: UCq-sp-1TOmIiVoxTiFoF1tg
 
 # Build settings
 markdown: kramdown
