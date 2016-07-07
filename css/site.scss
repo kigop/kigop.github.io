@@ -51,10 +51,11 @@ body  {
   color: $black;
   padding-left: 0;
   margin-left: 0;
+  font-family: 'Roboto', helvetica, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -99,6 +100,7 @@ h1 {
   display: table;
   min-height: 75vh;
   background-color: $white;
+  padding: 0;
 }
 
 .center-align {
