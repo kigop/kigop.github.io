@@ -8,42 +8,6 @@ $white: #f7f7f7;
 $darkgrey: #606666;
 $lightgrey: #f3f3f3;
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-Black.otf');
-    font-weight: bolder;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-bold.otf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-// ROBOTO
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
-
 body  {
   text-align: center;
   text-transform: uppercase;
@@ -51,11 +15,11 @@ body  {
   color: $black;
   padding-left: 0;
   margin-left: 0;
-  font-family: 'Roboto', helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat', helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
