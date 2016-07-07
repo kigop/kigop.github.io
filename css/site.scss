@@ -104,9 +104,12 @@ h1 {
 
   p {
 
+    text-transform: lowercase;
+
     span {
       font-size: 14pt;
       font-weight: bold;
+      text-transform: uppercase;
     }
   }
 }
